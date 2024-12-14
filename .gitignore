@@ -1,0 +1,8 @@
+node_modules
+package-lock.json
+/gulp/version.json
+
+/dist
+
+optSite.md
+templateGulp-dev.zip
