@@ -1,33 +1,21 @@
-html
-  scroll-behavior: smooth
-
 body
   position: relative
   display: flex
   flex-direction: column
   min-height: 100vh
-  overflow-x: hidden
   
 .not-scroll
   overflow: hidden
 
-.isHidden
-  display: none
-  
 .page
   flex: 1
   
 .container
   position: relative
-  padding: 0 5px 0 5px
   --container-width: 100%
   width: var(--container-width)
-  height: 100%
   margin: 0 auto
-  // left: 5%
-  // transform: translate(-5%, 0)
 
-  
 @media (min-width: 576px)
   @import sm
 

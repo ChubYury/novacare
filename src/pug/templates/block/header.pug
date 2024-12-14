@@ -1,3 +1,22 @@
 header.header-wrap 
   .container
-    h1 My beast header
+    .header
+      .header_logo
+        img.header_logo-image(src='@img/logo.png' alt='logo')
+      .header_content
+        nav.header_nav
+          a.header_item Home
+          a.header_item About Us
+          a.header_item Catalog
+          a.header_item Why Us
+          a.header_item Contacts
+        button.header_btn 
+          img.header_btn-img(src='./images/icons/icons.svg#cart')
+          span.header_btn-text Cart
+        .header_radio-box
+          if lang == 'eng'
+            a.header_radio-item.header_radio-item--active ENG
+            a.header_radio-item RU
+          else
+            a.header_radio-item ENG
+            a.header_radio-item.header_radio-item--active RU
