@@ -1,78 +1,44 @@
-.product
-  &_
-    &slider
-      grid-template-columns: 1fr 1fr 1fr
-      grid-template-rows: 1fr 330px 330px
-      grid-template-areas: "slide-1 slide-1 slide-2" "slide-1 slide-1 slide-3" "slide-4 slide-5 slide-6"
-      column-gap: 15px
-      row-gap: 15px
-    &slide
-      position: relative
-      cursor: pointer
-      &:nth-last-child(2)
-        .product_slide-link
-          background: rgba(28,46,66,.0)
-        .product_slide-text
-          opacity: 0
-        .product_slide-img
-          filter: blur(0rem)
-    &data-model
-      padding: 20px 0
-      background-color: transparent
-      color: var(--text-color-five)
-      text-align: left
-    &data-price
-      display: none
-    &data-item
-      background-color: var(--theme-color-white)
-
-.slide-6
-  display: block
-  
-//**********************************************************
-.product-desc
-  padding: 0 10px
-  &_
-    &title
-      display: none
-      width: 100%
-      text-align: center
-    &label
-      display: block
-      color: var(--text-color-base)
-    &price
-      display: block
-      color: var(--text-color-four)
-    &name
-      width: 60%
-      font-size: 16px
-      text-align: left
-    &text
-      width: 65%
-      font-size: 15px
-      text-align: left
-    &btn
-      margin: 40px 0
-//**********************************************************
-
-.call-us
-  padding: 71px 84px
+.prod-desc
+  flex-direction: row
   justify-content: space-between
   &_
-    &bg-img
-      display: block
-      position: absolute
-      width: 80%
-      top: 0
-      left: 0
-      z-index: 1
+    &content
+      justify-content: flex-start
+      width: 55%
+      padding: 20px 30px 15px 40px
     &title
-      text-align: left
+      font-size: 36px
+    &text
+      font-size: 15px
+    &img-wrap
+      left: 0
+      width: 43%
+      height: 450px
+      border-radius: 50% 0 50% 0
     &btn
-      margin: 25px 0 0 0
-      width: 45%
-//**********************************************************
+      padding: 12px 15px 12px 55px
 
-.next-cars
-  .card
-    max-width: 457px
+.prod-data
+  .table
+    &_
+      &head-cell
+        &--
+          &start
+            width: 18%
+          &min
+            width: 12%
+          &med
+            width: 14%
+      &head-caption
+        padding-left: 0
+      &cell
+        &--
+          &name
+            width: 20%
+          &min
+            width: 12%
+          &med
+            width: 14%
+          &end
+            width: 16%
+          

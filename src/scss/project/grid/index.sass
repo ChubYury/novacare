@@ -6,27 +6,30 @@ body
   display: flex
   flex-direction: column
   min-height: 100vh
+  background: var(--theme-color-base)
+  font-family: OpenSans
   overflow-x: hidden
+
   
 .not-scroll
   overflow: hidden
 
-.isHidden
-  display: none
+.is-hidden
+  display: none !important
   
 .page
   flex: 1
+  overflow: hidden
   
 .container
   position: relative
-  padding: 0 5px 0 5px
   --container-width: 100%
   width: var(--container-width)
-  height: 100%
   margin: 0 auto
-  // left: 5%
-  // transform: translate(-5%, 0)
-
+  padding: 0 50px 0 50px
+  zoom: 85%
+  
+//*************************************
   
 @media (min-width: 576px)
   @import sm
